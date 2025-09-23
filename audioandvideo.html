@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+        <title>Audio_and_Video</title>
+    </head>
+    <body>
+
+
+        <!--HTML AUDIO-->
+
+
+        <!-- <audio controls src="https://samplelib.com/lib/preview/mp3/sample-3s.mp3"></audio> -->
+         <!-- <audio controls>
+            <source src="https://samplelib.com/lib/preview/mp3/sample-3s.mp3" >
+         </audio> -->
+
+
+         <!--HTML VIDEO-->
+         <!-- <video controls src="https://sample-videos.com/video321/mp4/240/big_buck_bunny_240p_30mb.mp4" width="100%"></video> -->
+          <video controls width="100%" muted loop autoplay>
+            <source src="https://sample-videos.com/video321/mp4/240/big_buck_bunny_240p_30mb.mp4">
+            <track src="https://sample-videos.com/video321/mp4/240/big_buck_bunny_240p_30mb.mp4"
+                kind="subtitles"
+                lable="english"
+                srclang="en"
+                default
+                >
+          </video>
+    </body>
+</html>
+
+
+
+
+<!--autoplay helps in playing the video automatically-->
+<!--loop helps in running the video agai and again-->
+<!--muted keeps the video muted-->
+<!--controls gives various options like mute/unmute, play/pause,etc. and removing it would make all other contitions as default and play the video-->
+<!--track helps in providing the option for substitles-->

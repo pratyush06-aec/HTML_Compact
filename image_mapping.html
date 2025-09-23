@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewpoint" content="width=device-width, initila-scale=1.0">
+        <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+        <title>Image_Mapping</title>
+    </head>
+    <body>
+        <!-- <img src="https://cdn.platformtraining.com/wp-content/uploads/2016/12/panxe-qjwhe-paul-morris.jpg" alt="Mountain"
+        srcset="/assets/small.jpg 480w,
+                /assets/medium.jpg 720w,
+                /assets/large.jpg 1080w"
+        sizes="(max-width: 480px) 240px,
+               (max-width: 960px) 480px,
+               (max-width: 1440px) 960px"
+        > -->
+        <!-- <pictures>
+            <source media="(max-width: 480px)" srcset="https://i.pinimg.com/736x/10/07/ab/1007ab1d27ce8958c736e39e179dac89.jpg">
+            <source media="(max-width: 720px)" srcset="https://images.pexels.com/photos/556416/pexels-photo-556416.jpeg?cs=srgb&dl=landscape-mountains-nature-556416.jpg&fm=jpg">
+            <img src="https://cdn.platformtraining.com/wp-content/uploads/2016/12/panxe-qjwhe-paul-morris.jpg" alt="Mountain">
+        </pictures> -->
+
+        <!--Image_Mapping-->
+
+        <img src="https://static.vecteezy.com/system/resources/previews/002/074/421/non_2x/top-view-of-workspace-with-laptop-smartphone-tablet-coffee-cup-glasses-and-pen-on-wooden-table-photo.jpg" alt="workspace" usemap="workspace">
+        <map name="workspace">
+            <area shape="rect" coords="34, 44, 270, 350" alt="tablet" href="tablet.html">
+            <area shape="rect" coords="290, 172, 333, 250" alt="mobile" href="mobile.html">
+            <area shape="circle" coords="337, 300, 44" alt="tea_cup" href="tea_cup.html">
+        </map>
+    </body>
+</html>
+
+
+
+<!--area attribute is used for defining the specifications of an object like it's shape, coordinates, href(link of the webpage), alt(alternate)-->
+<!--When we run the program, a webpage is created containg the image from the given link in img src, from this image we click on specific objects and their respective webpages and created and they are stored and this is what image_mapping is all about-->

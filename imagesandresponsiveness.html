@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewpoint" content="widthg=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+        <title>ImagesandResponsiveness</title>
+    </head>
+    <body>
+        <!-- <img src="https://cdn.platformtraining.com/wp-content/uploads/2016/12/panxe-qjwhe-paul-morris.jpg" alt="Mountain" width="100%" height="100%"           
+        srcset="/assets/small.jpg 480w,
+                /assets/medium.jpg 720w,
+                /assets/large.jpg 1080w"
+        sizes="(max width: 480px) 240px,
+               (max width: 960px) 480px,
+               (max width: 1440px) 960px"
+        > -->
+        <picture>
+            <source media="(max-width: 480px)" srcset="https://i.pinimg.com/736x/10/07/ab/1007ab1d27ce8958c736e39e179dac89.jpg">
+            <source media="(max-width: 720px)" srcset="https://images.pexels.com/photos/556416/pexels-photo-556416.jpeg?cs=srgb&dl=landscape-mountains-nature-556416.jpg&fm=jpg">
+            <img src="https://cdn.platformtraining.com/wp-content/uploads/2016/12/panxe-qjwhe-paul-morris.jpg" alt="Mountain">
+        </picture>
+    </body>
+</html>
+
+
+
+<!--alt i.e., alternate works only when the given link in the src section is wrong, to tell the user what the image is about such as here it is a Mountain-->
+<!--src is used to store the link of the image in the body, so that when the web page is opened the image is displayed on it-->
+<!--srcset is used to store the width of the image according to the changing size of the webpage-->
+<!--sizes attribute is used to set the image size according to the max width of the webpage-->
+<!--picture attribute is used to change the image in the webpage, according to the changing resolution-->
+<!--source media contains the max-width, i.e., the resolution according to which the picture changes in the webpage-->
